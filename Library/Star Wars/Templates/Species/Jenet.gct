@@ -1,0 +1,553 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "fbb9e2f7-3881-4945-b0a2-2ce17b9688de",
+	"traits": [
+		{
+			"id": "84b3cb66-6398-40b0-9a0a-74008fb7af26",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "2a6586e9-c8a7-44d0-be86-573790c3929c",
+					"type": "trait",
+					"name": "Decreased Strength",
+					"reference": "B14",
+					"tags": [
+						"Attribute",
+						"Disadvantage",
+						"Physical"
+					],
+					"levels": 2,
+					"points_per_level": -10,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "st",
+							"amount": -1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": -20
+					}
+				},
+				{
+					"id": "70761839-0819-471b-9bb8-f390a7bddc09",
+					"type": "trait",
+					"name": "Increased Dexterity",
+					"reference": "B15",
+					"tags": [
+						"Advantage",
+						"Attribute",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "26b39aca-fc45-404a-9dbd-be0e55323b67",
+							"type": "modifier",
+							"name": "No Fine Manipulators",
+							"cost": -40,
+							"disabled": true
+						}
+					],
+					"levels": 2,
+					"points_per_level": 20,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "dx",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 40
+					}
+				},
+				{
+					"id": "67a1297a-f00b-4e9f-93ed-6a7e5baab3b7",
+					"type": "trait",
+					"name": "Increased Intelligence",
+					"reference": "B15",
+					"tags": [
+						"Advantage",
+						"Attribute",
+						"Mental"
+					],
+					"levels": 2,
+					"points_per_level": 20,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "iq",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 40
+					}
+				},
+				{
+					"id": "007ea7f0-0b23-4d4b-8e77-a0cf5e6df871",
+					"type": "trait",
+					"name": "Increased Basic Speed",
+					"reference": "B17",
+					"tags": [
+						"Advantage",
+						"Attribute",
+						"Physical"
+					],
+					"levels": 1,
+					"points_per_level": 5,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "basic_speed",
+							"amount": 0.25,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "c3fa0db7-bd0e-469f-b6a9-0db0025e2734",
+					"type": "trait",
+					"name": "Increased Basic Move",
+					"reference": "B17",
+					"tags": [
+						"Advantage",
+						"Attribute",
+						"Physical"
+					],
+					"levels": 1,
+					"points_per_level": 5,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "basic_move",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "70747832-3fec-4a1e-bc31-8237c1f623b4",
+					"type": "trait",
+					"name": "Eidetic Memory",
+					"reference": "B51",
+					"tags": [
+						"Advantage",
+						"Mental"
+					],
+					"modifiers": [
+						{
+							"id": "309120f1-8e25-46bf-ba83-6c998f4d9025",
+							"type": "modifier",
+							"name": "Photographic",
+							"reference": "B51",
+							"cost": 5,
+							"cost_type": "points",
+							"disabled": true
+						}
+					],
+					"base_points": 5,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "219b7ae9-5ba1-4ee6-8e9e-cdc23634cc0d",
+					"type": "trait",
+					"name": "Language: Jenet",
+					"reference": "B24",
+					"tags": [
+						"Advantage",
+						"Language",
+						"Mental"
+					],
+					"modifiers": [
+						{
+							"id": "ff972d9a-b925-4895-a489-f3d14999074d",
+							"type": "modifier",
+							"name": "Native",
+							"reference": "B23",
+							"cost": -6,
+							"cost_type": "points"
+						},
+						{
+							"id": "e9f38c71-c4bd-45ee-a5e2-b47a33029f96",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "6cd10ab4-c4f9-4764-a47d-0e77d105d862",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Broken",
+							"cost": 1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "3c7caa3c-055e-4422-ac8e-6a2d632b391c",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Accented",
+							"cost": 2,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "231ba28d-11ce-44e1-8d23-074d40ca57c6",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						},
+						{
+							"id": "152ad20b-dc58-4abb-b256-71da14dbb89c",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "6304a0d6-80f3-4a5f-b3cc-3ba2ae0c8063",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Broken",
+							"cost": 1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "5818ab4a-2c4b-4c3e-a711-c4b6332daaca",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Accented",
+							"cost": 2,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "1b77515e-5789-49a0-8238-7242900c8c2c",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "c8de8dc9-47c7-48ff-b6dd-ee75e977ba06",
+					"type": "trait",
+					"name": "Night Vision",
+					"reference": "B71,P87",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"levels": 1,
+					"points_per_level": 1,
+					"can_level": true,
+					"calc": {
+						"points": 1
+					}
+				},
+				{
+					"id": "936bc8c6-2249-4b2b-a7ff-4e7d8149beab",
+					"type": "trait",
+					"name": "Talent (Nimble \u0026 Swift)",
+					"reference": "SWC62",
+					"levels": 1,
+					"points_per_level": 5,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Swimming"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Running"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Jumping"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Escape"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Climbing"
+							},
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "1dc7ec04-fc5f-4da9-91f3-9b3c5f884f0c",
+					"type": "trait",
+					"name": "Fur",
+					"reference": "B101",
+					"tags": [
+						"Exotic",
+						"Perk",
+						"Physical"
+					],
+					"base_points": 1,
+					"calc": {
+						"points": 1
+					}
+				},
+				{
+					"id": "efaa835d-fd22-484b-808d-131da4b80d40",
+					"type": "trait",
+					"name": "Obsession",
+					"reference": "B146",
+					"notes": "Trivial Details; Make a self-control roll whenever it would be wise to deviate from your goal. If you fail, you continue to pursue your Obsession, regardless of the consequences.",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"modifiers": [
+						{
+							"id": "aadc441c-1423-4e59-a5ee-9a628b843420",
+							"type": "modifier",
+							"name": "Short term",
+							"reference": "B146",
+							"cost": -5,
+							"cost_type": "points"
+						},
+						{
+							"id": "31e5b8b9-f9ba-44e3-8afd-e6b285be3b93",
+							"type": "modifier",
+							"name": "Long term",
+							"reference": "B146",
+							"cost": -10,
+							"cost_type": "points",
+							"disabled": true
+						}
+					],
+					"cr": 6,
+					"calc": {
+						"points": -10
+					}
+				},
+				{
+					"id": "1469d585-3626-46a2-9ccc-6ba4cacb97c8",
+					"type": "trait",
+					"name": "Odious Racial Habit",
+					"reference": "B22",
+					"notes": "Tactless",
+					"tags": [
+						"Disadvantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "3d982038-f3cc-476f-8f1a-1221f87c1ec8",
+							"type": "modifier",
+							"name": "-1 Reaction",
+							"reference": "B22",
+							"cost": -5,
+							"cost_type": "points"
+						},
+						{
+							"id": "9dd7b646-b563-4eb1-ac3b-6672412868c1",
+							"type": "modifier",
+							"name": "-2 Reaction",
+							"reference": "B22",
+							"cost": -10,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "5ed445b6-67ea-4f24-af06-50d80a1d0d94",
+							"type": "modifier",
+							"name": "-3 Reaction",
+							"reference": "B22",
+							"cost": -15,
+							"cost_type": "points",
+							"disabled": true
+						}
+					],
+					"calc": {
+						"points": -5
+					}
+				},
+				{
+					"id": "81a857e9-0a03-4112-8f22-568ae24440ba",
+					"type": "trait",
+					"name": "Incompetence (Literature)",
+					"reference": "B164",
+					"notes": "May only know Literature at default (i.e. no points spent)",
+					"tags": [
+						"Mental",
+						"Quirk"
+					],
+					"base_points": -1,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Literature"
+							},
+							"amount": -4
+						}
+					],
+					"calc": {
+						"points": -1
+					}
+				},
+				{
+					"id": "471f508c-ee19-453e-b554-c65b8f4f0407",
+					"type": "trait_container",
+					"open": true,
+					"children": [
+						{
+							"id": "c4c88672-3cfb-45c0-90e2-e39310246530",
+							"type": "trait",
+							"name": "Decreased Intelligence",
+							"reference": "B15",
+							"tags": [
+								"Attribute",
+								"Disadvantage",
+								"Mental"
+							],
+							"levels": 2,
+							"points_per_level": -20,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "iq",
+									"amount": -1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": -40
+							}
+						},
+						{
+							"id": "7ad34332-ef40-43be-8e63-2ad5ccc520a1",
+							"type": "trait",
+							"name": "Pacifism: Total Nonviolence",
+							"reference": "B148",
+							"notes": "You will not lift a hand against another intelligent creature, for any reason. You must do your nonviolent best to discourage violent behavior in others, too. You are free to defend yourself against attacks by animals, mosquitoes, etc.",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "d80be636-1a32-4d36-af97-04d6e459d119",
+									"type": "modifier",
+									"name": "Species-Specific",
+									"reference": "UT32",
+									"cost": -80,
+									"disabled": true
+								}
+							],
+							"base_points": -30,
+							"calc": {
+								"points": -30
+							}
+						},
+						{
+							"id": "2509b39e-0f97-4d37-9428-d7e4721026a4",
+							"type": "trait",
+							"name": "Slave Mentality",
+							"reference": "B154",
+							"tags": [
+								"Disadvantage",
+								"Physical"
+							],
+							"base_points": -40,
+							"calc": {
+								"points": -40
+							}
+						}
+					],
+					"name": "Lens: Imperial Slave Breading",
+					"calc": {
+						"points": -110
+					}
+				}
+			],
+			"name": "Jenet",
+			"reference": "SWS64",
+			"notes": "SM-1",
+			"ancestry": "Human",
+			"container_type": "race",
+			"calc": {
+				"points": -44
+			}
+		}
+	]
+}

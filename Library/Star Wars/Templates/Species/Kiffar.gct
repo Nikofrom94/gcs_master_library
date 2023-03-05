@@ -1,0 +1,311 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "85e4aca3-25b6-48d7-a948-723d195ce14d",
+	"traits": [
+		{
+			"id": "4b7e5c17-0675-4a76-aab1-833e48686a4a",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "5f445c68-af85-4e86-8c1e-b8d5d766560a",
+					"type": "trait",
+					"name": "Language: Galactic Basic",
+					"reference": "B24",
+					"tags": [
+						"Advantage",
+						"Language",
+						"Mental"
+					],
+					"modifiers": [
+						{
+							"id": "ff972d9a-b925-4895-a489-f3d14999074d",
+							"type": "modifier",
+							"name": "Native",
+							"reference": "B23",
+							"cost": -6,
+							"cost_type": "points"
+						},
+						{
+							"id": "e9f38c71-c4bd-45ee-a5e2-b47a33029f96",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "6cd10ab4-c4f9-4764-a47d-0e77d105d862",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Broken",
+							"cost": 1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "3c7caa3c-055e-4422-ac8e-6a2d632b391c",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Accented",
+							"cost": 2,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "231ba28d-11ce-44e1-8d23-074d40ca57c6",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						},
+						{
+							"id": "152ad20b-dc58-4abb-b256-71da14dbb89c",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "6304a0d6-80f3-4a5f-b3cc-3ba2ae0c8063",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Broken",
+							"cost": 1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "5818ab4a-2c4b-4c3e-a711-c4b6332daaca",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Accented",
+							"cost": 2,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "1b77515e-5789-49a0-8238-7242900c8c2c",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "f3a3fdac-3d57-4885-b636-4021a4ef29ea",
+					"type": "trait",
+					"name": "Code of Honor",
+					"reference": "B163,MA53",
+					"notes": "Clan",
+					"tags": [
+						"Mental",
+						"Quirk"
+					],
+					"base_points": -5,
+					"calc": {
+						"points": -5
+					}
+				},
+				{
+					"id": "b7847af0-18f8-4722-bc95-49710acee9c9",
+					"type": "trait",
+					"name": "Dislikes other Kiffar clans",
+					"reference": "B164",
+					"tags": [
+						"Mental",
+						"Quirk"
+					],
+					"base_points": -1,
+					"calc": {
+						"points": -1
+					}
+				},
+				{
+					"id": "1c367b6a-3b65-4489-afa5-3b70ddacf979",
+					"type": "trait",
+					"name": "Distinctive Features",
+					"reference": "B165",
+					"notes": "Qukuuf (distinct facial markings)",
+					"tags": [
+						"Physical",
+						"Quirk"
+					],
+					"base_points": -1,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "disguise"
+							},
+							"amount": -1
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "shadowing"
+							},
+							"amount": -1
+						},
+						{
+							"type": "conditional_modifier",
+							"situation": "to others’ attempts to identify or follow you",
+							"amount": 1
+						}
+					],
+					"calc": {
+						"points": -1
+					}
+				},
+				{
+					"id": "a384720e-41ab-48c9-b5c0-14832e20f8c6",
+					"type": "trait_container",
+					"open": true,
+					"children": [
+						{
+							"id": "6e668901-ba4d-4f9b-9406-36429e9e9cce",
+							"type": "trait",
+							"name": "Force Sensitivity",
+							"tags": [
+								"Advantage",
+								"Force",
+								"Mental",
+								"Supernatural"
+							],
+							"modifiers": [
+								{
+									"id": "44658d72-bcac-4243-9eb3-4c71a3af1da9",
+									"type": "modifier",
+									"name": "Dark Aspect",
+									"cost": -40,
+									"disabled": true
+								},
+								{
+									"id": "f1b13b68-c101-454a-9e98-e9f89554a89e",
+									"type": "modifier",
+									"name": "Light Aspect",
+									"cost": -40,
+									"disabled": true
+								},
+								{
+									"id": "3fed15a2-6798-406d-a8b0-f8fae006ff05",
+									"type": "modifier",
+									"name": "Neutral Aspect",
+									"cost": -40,
+									"disabled": true
+								}
+							],
+							"base_points": 5,
+							"points_per_level": 10,
+							"features": [
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is"
+									},
+									"amount": 1
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 5
+							}
+						}
+					],
+					"name": "Psychometric Ability",
+					"notes": "1% of Kiffar are Force sensitives",
+					"calc": {
+						"points": 5
+					}
+				}
+			],
+			"name": "Kiffar",
+			"reference": "SWS70",
+			"ancestry": "Human",
+			"container_type": "race",
+			"calc": {
+				"points": -2
+			}
+		}
+	],
+	"spells": [
+		{
+			"id": "f2ad7042-e49f-4a10-8638-598810472155",
+			"type": "spell_container",
+			"open": true,
+			"children": [
+				{
+					"id": "95bc5865-57ed-4914-ba75-e7c556248193",
+					"type": "spell",
+					"name": "Psychometric Sense",
+					"notes": "Dark if it involves emotional stress",
+					"tags": [
+						"Dark",
+						"Neutral",
+						"Sense"
+					],
+					"difficulty": "will/vh",
+					"college": [
+						"Dark",
+						"Neutral"
+					],
+					"power_source": "Force",
+					"spell_class": "Information",
+					"casting_cost": "varies",
+					"casting_time": "1 sec per EP",
+					"duration": "Event tied",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Sense Talent"
+								},
+								"level": {
+									"compare": "at_least",
+									"qualifier": 1
+								}
+							},
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Force Sensitivity"
+								}
+							}
+						]
+					}
+				}
+			],
+			"name": "Kiffar Psychometric Ability",
+			"notes": "1% of Kiffar are Force sensitives"
+		}
+	]
+}
