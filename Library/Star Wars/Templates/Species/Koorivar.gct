@@ -1,0 +1,71 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "444431c9-c831-4099-afb1-0a22ee399699",
+	"traits": [
+		{
+			"id": "42e76951-5bc3-4cf4-8a36-05dae5087122",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "1879fb00-0b37-4f1f-8e73-ba50f2f26702",
+					"type": "trait",
+					"name": "Increased Intelligence",
+					"reference": "B15",
+					"tags": [
+						"Advantage",
+						"Attribute",
+						"Mental"
+					],
+					"levels": 2,
+					"points_per_level": 20,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "iq",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 40
+					}
+				},
+				{
+					"id": "23548eac-2ec8-4a31-96d2-80ee38a74de3",
+					"type": "trait",
+					"name": "Decreased Health",
+					"reference": "B14",
+					"tags": [
+						"Attribute",
+						"Disadvantage",
+						"Physical"
+					],
+					"levels": 2,
+					"points_per_level": -10,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "ht",
+							"amount": -1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": -20
+					}
+				}
+			],
+			"name": "Koorivar",
+			"reference": "SWS72",
+			"ancestry": "Human",
+			"container_type": "race",
+			"calc": {
+				"points": 20
+			}
+		}
+	]
+}
