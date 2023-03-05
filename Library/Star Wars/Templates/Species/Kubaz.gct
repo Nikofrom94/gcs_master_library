@@ -1,0 +1,467 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "933de692-6292-457e-bc95-0fdf1e7c4284",
+	"traits": [
+		{
+			"id": "2d056f8c-a212-42b1-bea4-4ca643cb7d46",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "6fd0a94c-7712-46cd-892f-1488056c7b70",
+					"type": "trait",
+					"name": "Decreased Strength",
+					"reference": "B14",
+					"tags": [
+						"Attribute",
+						"Disadvantage",
+						"Physical"
+					],
+					"levels": 2,
+					"points_per_level": -10,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "st",
+							"amount": -1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": -20
+					}
+				},
+				{
+					"id": "f7338422-0f58-4693-bbc3-cd93874fd1fb",
+					"type": "trait",
+					"name": "Increased Dexterity",
+					"reference": "B15",
+					"tags": [
+						"Advantage",
+						"Attribute",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "26b39aca-fc45-404a-9dbd-be0e55323b67",
+							"type": "modifier",
+							"name": "No Fine Manipulators",
+							"cost": -40,
+							"disabled": true
+						}
+					],
+					"levels": 2,
+					"points_per_level": 20,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "dx",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 40
+					}
+				},
+				{
+					"id": "4aba36d7-e27e-438c-8143-a40d83b423db",
+					"type": "trait",
+					"name": "Increased Intelligence",
+					"reference": "B15",
+					"tags": [
+						"Advantage",
+						"Attribute",
+						"Mental"
+					],
+					"levels": 1,
+					"points_per_level": 20,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "iq",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 20
+					}
+				},
+				{
+					"id": "0b846508-e2f3-43de-b3bd-0b0eb4daa767",
+					"type": "trait",
+					"name": "Low TL",
+					"reference": "B22",
+					"tags": [
+						"Disadvantage",
+						"Social"
+					],
+					"levels": 2,
+					"points_per_level": -5,
+					"can_level": true,
+					"calc": {
+						"points": -10
+					}
+				},
+				{
+					"id": "b9409ab5-7134-49bc-8854-0255521a6739",
+					"type": "trait",
+					"name": "Language: Kubazi",
+					"reference": "B24",
+					"tags": [
+						"Advantage",
+						"Language",
+						"Mental"
+					],
+					"modifiers": [
+						{
+							"id": "ff972d9a-b925-4895-a489-f3d14999074d",
+							"type": "modifier",
+							"name": "Native",
+							"reference": "B23",
+							"cost": -6,
+							"cost_type": "points"
+						},
+						{
+							"id": "e9f38c71-c4bd-45ee-a5e2-b47a33029f96",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "6cd10ab4-c4f9-4764-a47d-0e77d105d862",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Broken",
+							"cost": 1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "3c7caa3c-055e-4422-ac8e-6a2d632b391c",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Accented",
+							"cost": 2,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "231ba28d-11ce-44e1-8d23-074d40ca57c6",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						},
+						{
+							"id": "152ad20b-dc58-4abb-b256-71da14dbb89c",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "6304a0d6-80f3-4a5f-b3cc-3ba2ae0c8063",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Broken",
+							"cost": 1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "5818ab4a-2c4b-4c3e-a711-c4b6332daaca",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Accented",
+							"cost": 2,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "1b77515e-5789-49a0-8238-7242900c8c2c",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "33405419-95f6-45da-8b23-f65d9cb86819",
+					"type": "trait",
+					"name": "Intolerance (Insectoids)",
+					"reference": "B140",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"modifiers": [
+						{
+							"id": "0e1c693c-166b-417f-b6aa-1c6e04afbd68",
+							"type": "modifier",
+							"name": "Scope: Common",
+							"reference": "B140",
+							"cost": -5,
+							"cost_type": "points"
+						},
+						{
+							"id": "e21c80e8-cdd8-4040-b7a1-33af63210703",
+							"type": "modifier",
+							"name": "Scope: Occasional",
+							"reference": "B140",
+							"cost": -2,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "2655dfad-4f5e-4367-a524-fad35a774654",
+							"type": "modifier",
+							"name": "Scope: Rare",
+							"reference": "B140",
+							"cost": -1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "522dbb89-3781-4d8b-bf72-a6d24892dce2",
+							"type": "modifier",
+							"name": "Scope: Anyone unlike you",
+							"reference": "B140",
+							"cost": -10,
+							"cost_type": "points",
+							"disabled": true
+						}
+					],
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from victims of your intolerance (may be as much as -5, at GM's discretion)",
+							"amount": -1
+						}
+					],
+					"calc": {
+						"points": -5
+					}
+				},
+				{
+					"id": "d7b2349d-0d21-496c-84b4-4c33267b64a0",
+					"type": "trait",
+					"name": "Weakness : red wavelengths of light",
+					"reference": "B161",
+					"tags": [
+						"Disadvantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "e28bd392-7fd5-45de-a3e3-ec49aec2343a",
+							"type": "modifier",
+							"name": "1d damage per minute",
+							"reference": "B161",
+							"cost": -20,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "4b9dd12d-fa84-462d-b67b-0d27f2f9d3fc",
+							"type": "modifier",
+							"name": "1d damage per 5 minutes",
+							"reference": "B161",
+							"cost": -10,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "e16e7fb5-1597-4644-ac36-07144d853209",
+							"type": "modifier",
+							"name": "1d damage per 30 minutes",
+							"reference": "B161",
+							"cost": -5,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "186bbe2a-9b7e-4879-9dbb-43dddeb6058d",
+							"type": "modifier",
+							"name": "@Rare Substance@",
+							"reference": "B161",
+							"cost": 0.5,
+							"cost_type": "multiplier",
+							"disabled": true
+						},
+						{
+							"id": "636139b9-3bf4-4642-8ad9-9d98b669cf91",
+							"type": "modifier",
+							"name": "@Occasional Substance@",
+							"reference": "B161",
+							"cost": 1,
+							"cost_type": "multiplier",
+							"disabled": true
+						},
+						{
+							"id": "4723bd7d-4a86-45f2-a8e9-2a957d11a501",
+							"type": "modifier",
+							"name": "@Common Substance@",
+							"reference": "B161",
+							"cost": 2,
+							"cost_type": "multiplier",
+							"disabled": true
+						},
+						{
+							"id": "722875e1-a8c4-49a7-af43-0ccd82a3691e",
+							"type": "modifier",
+							"name": "Very Common : Light",
+							"reference": "B161",
+							"cost": 3,
+							"cost_type": "multiplier"
+						},
+						{
+							"id": "081ff60c-7208-4ef7-b07a-3f6b24952f3f",
+							"type": "modifier",
+							"name": "Fatigue Only",
+							"reference": "B161",
+							"cost": -50,
+							"disabled": true
+						},
+						{
+							"id": "0d8aebdd-50b8-4377-9cac-294d221a3fc4",
+							"type": "modifier",
+							"name": "Variable",
+							"reference": "B161",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "8696d667-51ad-40f8-8e79-b5377c757415",
+							"type": "modifier",
+							"name": "Mitigator",
+							"reference": "B112",
+							"notes": "Vulnerable, glasses",
+							"cost": -60
+						}
+					],
+					"base_points": -15,
+					"calc": {
+						"points": -18
+					}
+				},
+				{
+					"id": "613f5b13-2f51-4c3f-b1ca-b971eaea40df",
+					"type": "trait",
+					"name": "Truthfulness",
+					"reference": "B159",
+					"notes": "Make a self-control roll whenever you must keep silent about an uncomfortable truth (lying by omission). Roll at -5 if you actually have to tell a falsehood! If you fail, you blurt out the truth, or stumble so much that your lie is obvious.",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"base_points": -5,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "fast talk"
+							},
+							"amount": -5
+						}
+					],
+					"cr": 12,
+					"calc": {
+						"points": -5
+					}
+				},
+				{
+					"id": "8b9d0633-9e0c-472e-a520-8ac41ec44af0",
+					"type": "trait",
+					"name": "Likes Sophisticated Entertainment",
+					"reference": "B164",
+					"tags": [
+						"Mental",
+						"Quirk"
+					],
+					"base_points": -1,
+					"calc": {
+						"points": -1
+					}
+				},
+				{
+					"id": "e8f9efad-b891-4059-b456-36f302fc804c",
+					"type": "trait",
+					"name": "Likes Traditions",
+					"reference": "B164",
+					"tags": [
+						"Mental",
+						"Quirk"
+					],
+					"base_points": -1,
+					"calc": {
+						"points": -1
+					}
+				},
+				{
+					"id": "591039f4-f7f9-4337-8ef1-f4fc56644578",
+					"type": "trait",
+					"name": "Racial Skill Bonus - Linguistics",
+					"reference": "BX452",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Mental",
+						"Talent"
+					],
+					"levels": 2,
+					"points_per_level": 2,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Linguistics"
+							},
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 4
+					}
+				}
+			],
+			"name": "Kubaz",
+			"reference": "SWS75",
+			"notes": "TL-9",
+			"ancestry": "Human",
+			"container_type": "race",
+			"calc": {
+				"points": 4
+			}
+		}
+	]
+}

@@ -57,6 +57,596 @@
 					"calc": {
 						"points": -20
 					}
+				},
+				{
+					"id": "6b7ed06c-4c25-4aff-8695-bc40682e97cc",
+					"type": "trait",
+					"name": "Increased Will",
+					"reference": "B16",
+					"tags": [
+						"Advantage",
+						"Attribute",
+						"Mental"
+					],
+					"levels": 1,
+					"points_per_level": 5,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "will",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "5d797fdd-1e06-41c3-8c0e-4517cd760556",
+					"type": "trait",
+					"name": "Talent (Business Acumen)",
+					"reference": "B90",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Talent"
+					],
+					"levels": 1,
+					"points_per_level": 10,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Accounting"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Administration"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Economics"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Finance"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Gambling"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Market Analysis"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Merchant"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Propaganda"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "reaction_bonus",
+							"situation": "from business partners",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "777e2fed-e734-40f8-b697-063e82440757",
+					"type": "trait",
+					"name": "Charisma",
+					"reference": "B41",
+					"tags": [
+						"Advantage",
+						"Mental"
+					],
+					"levels": 2,
+					"points_per_level": 5,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "fortune-telling"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "leadership"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "panhandling"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "public speaking"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "reaction_bonus",
+							"situation": "from sapient being with whom you actively interact (converse, lecture, etc.)",
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "reaction_bonus",
+							"situation": "to Influence rolls",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "ee2c6fb8-08c1-4e71-9c0e-a639ac237982",
+					"type": "trait",
+					"name": "Language: Koorivar",
+					"reference": "B24",
+					"tags": [
+						"Advantage",
+						"Language",
+						"Mental"
+					],
+					"modifiers": [
+						{
+							"id": "ff972d9a-b925-4895-a489-f3d14999074d",
+							"type": "modifier",
+							"name": "Native",
+							"reference": "B23",
+							"cost": -6,
+							"cost_type": "points"
+						},
+						{
+							"id": "e9f38c71-c4bd-45ee-a5e2-b47a33029f96",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "6cd10ab4-c4f9-4764-a47d-0e77d105d862",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Broken",
+							"cost": 1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "3c7caa3c-055e-4422-ac8e-6a2d632b391c",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Accented",
+							"cost": 2,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "231ba28d-11ce-44e1-8d23-074d40ca57c6",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						},
+						{
+							"id": "152ad20b-dc58-4abb-b256-71da14dbb89c",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "6304a0d6-80f3-4a5f-b3cc-3ba2ae0c8063",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Broken",
+							"cost": 1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "5818ab4a-2c4b-4c3e-a711-c4b6332daaca",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Accented",
+							"cost": 2,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "1b77515e-5789-49a0-8238-7242900c8c2c",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "c35229db-63c0-450d-abd6-4df30700f5be",
+					"type": "trait",
+					"name": "Language: Galactic Basic",
+					"reference": "B24",
+					"tags": [
+						"Advantage",
+						"Language",
+						"Mental"
+					],
+					"modifiers": [
+						{
+							"id": "ff972d9a-b925-4895-a489-f3d14999074d",
+							"type": "modifier",
+							"name": "Native",
+							"reference": "B23",
+							"cost": -6,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "e9f38c71-c4bd-45ee-a5e2-b47a33029f96",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "6cd10ab4-c4f9-4764-a47d-0e77d105d862",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Broken",
+							"cost": 1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "3c7caa3c-055e-4422-ac8e-6a2d632b391c",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Accented",
+							"cost": 2,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "231ba28d-11ce-44e1-8d23-074d40ca57c6",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						},
+						{
+							"id": "152ad20b-dc58-4abb-b256-71da14dbb89c",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "6304a0d6-80f3-4a5f-b3cc-3ba2ae0c8063",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Broken",
+							"cost": 1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "5818ab4a-2c4b-4c3e-a711-c4b6332daaca",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Accented",
+							"cost": 2,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "1b77515e-5789-49a0-8238-7242900c8c2c",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points",
+							"disabled": true
+						}
+					],
+					"calc": {
+						"points": 3
+					}
+				},
+				{
+					"id": "90624b7c-02b1-4f23-bdcf-8b3f974ecf8b",
+					"type": "trait",
+					"name": "Crushing Striker (Horn)",
+					"reference": "B88,MA47",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "f373791c-47c0-4076-825c-bfb568e16511",
+							"type": "modifier",
+							"name": "Cannot Parry",
+							"reference": "B88",
+							"cost": -40
+						},
+						{
+							"id": "2ae98985-60b2-47c5-b483-faffa914a5b2",
+							"type": "modifier",
+							"name": "Clumsy",
+							"reference": "B88",
+							"cost": -20,
+							"levels": 1,
+							"disabled": true,
+							"features": [
+								{
+									"type": "skill_bonus",
+									"selection_type": "this_weapon",
+									"name": {
+										"compare": "is"
+									},
+									"amount": -1,
+									"per_level": true
+								}
+							]
+						},
+						{
+							"id": "1e9d75f7-e37e-46a0-8bce-84d396a30ae1",
+							"type": "modifier",
+							"name": "Limited Arc (Straight ahead)",
+							"reference": "B88",
+							"cost": -40
+						},
+						{
+							"id": "4671a6c2-1aa8-49fa-8bca-76b1e4d4f69e",
+							"type": "modifier",
+							"name": "Weak",
+							"cost": -50,
+							"features": [
+								{
+									"type": "weapon_bonus",
+									"selection_type": "this_weapon",
+									"name": {
+										"compare": "is"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": -1,
+									"per_level": true
+								}
+							]
+						}
+					],
+					"base_points": 5,
+					"weapons": [
+						{
+							"id": "2a9ee24e-3cc4-46a1-861d-4f8de4f8f207",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"modifier_per_die": 1
+							},
+							"reach": "C",
+							"parry": "0",
+							"block": "No",
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Brawling"
+								}
+							],
+							"calc": {
+								"parry": "0",
+								"block": "No",
+								"damage": "thr (+1 per die) cr"
+							}
+						}
+					],
+					"calc": {
+						"points": 1
+					}
+				},
+				{
+					"id": "16e8de34-a6f4-4bde-be9a-1806b62cff72",
+					"type": "trait",
+					"name": "Careful",
+					"reference": "B163",
+					"tags": [
+						"Mental",
+						"Quirk"
+					],
+					"base_points": -1,
+					"calc": {
+						"points": -1
+					}
+				},
+				{
+					"id": "5538f2d9-5d37-4281-b2ba-ef6ee49aea80",
+					"type": "trait",
+					"name": "Opportunistic",
+					"reference": "SWC92",
+					"notes": "A lesser form of Greed. You are always on the lookout to make some credits or to obtain some goods.",
+					"tags": [
+						"Mental",
+						"Quirk"
+					],
+					"base_points": -1,
+					"calc": {
+						"points": -1
+					}
+				},
+				{
+					"id": "0da4c8dc-9318-4208-9b4e-7486d85ddaa1",
+					"type": "trait",
+					"name": "Racial Skill Bonus - Body Language",
+					"reference": "BX452",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Mental",
+						"Talent"
+					],
+					"levels": 1,
+					"points_per_level": 2,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Body Language"
+							},
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 2
+					}
+				},
+				{
+					"id": "51a5aa7d-0ca0-404f-b4bb-7f6be8724e43",
+					"type": "trait",
+					"name": "Racial Skill Bonus - Detect Lies",
+					"reference": "BX452",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Mental",
+						"Talent"
+					],
+					"levels": 2,
+					"points_per_level": 2,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Detect Lies"
+							},
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 4
+					}
 				}
 			],
 			"name": "Koorivar",
@@ -64,7 +654,7 @@
 			"ancestry": "Human",
 			"container_type": "race",
 			"calc": {
-				"points": 20
+				"points": 53
 			}
 		}
 	]

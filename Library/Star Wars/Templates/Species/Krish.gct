@@ -1,0 +1,372 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "6b16603f-e381-412e-ac75-ac890ef0b105",
+	"traits": [
+		{
+			"id": "69f0cd6d-ff2a-4857-86a5-b3d023c73779",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "30f9b97d-6457-4583-b667-3a94ecc0f68b",
+					"type": "trait",
+					"name": "Increased Strength",
+					"reference": "B14",
+					"tags": [
+						"Advantage",
+						"Attribute",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "fc2b398f-467b-4c36-857b-98087975f0c4",
+							"type": "modifier",
+							"name": "No Fine Manipulators",
+							"reference": "B15",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "89e24b12-233b-4ad9-a77a-934e7bc640f7",
+							"type": "modifier",
+							"name": "Size",
+							"reference": "B15",
+							"cost": -10,
+							"levels": 1,
+							"disabled": true
+						},
+						{
+							"id": "4f3a7bdb-ed81-4735-87e8-d9eaeb4856c7",
+							"type": "modifier",
+							"name": "Super-Effort",
+							"reference": "SU24",
+							"cost": 300,
+							"disabled": true
+						}
+					],
+					"levels": 3,
+					"points_per_level": 10,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "st",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 30
+					}
+				},
+				{
+					"id": "157fa8ed-46fb-452d-ae6a-7f676278a1ad",
+					"type": "trait",
+					"name": "Decreased Intelligence",
+					"reference": "B15",
+					"tags": [
+						"Attribute",
+						"Disadvantage",
+						"Mental"
+					],
+					"levels": 3,
+					"points_per_level": -20,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "iq",
+							"amount": -1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": -60
+					}
+				},
+				{
+					"id": "1ecfc0ac-7733-4eca-9ff3-3f4d61a8e201",
+					"type": "trait",
+					"name": "Fearlessness",
+					"reference": "B55,MA44",
+					"tags": [
+						"Advantage",
+						"Mental"
+					],
+					"levels": 3,
+					"points_per_level": 2,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": false,
+								"name": {
+									"compare": "is",
+									"qualifier": "Fearfulness"
+								}
+							}
+						]
+					},
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "fright_check",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 6
+					}
+				},
+				{
+					"id": "17d5f1c7-0496-43f3-a240-add4232dda2b",
+					"type": "trait",
+					"name": "Language: Krish",
+					"reference": "B24",
+					"tags": [
+						"Advantage",
+						"Language",
+						"Mental"
+					],
+					"modifiers": [
+						{
+							"id": "ff972d9a-b925-4895-a489-f3d14999074d",
+							"type": "modifier",
+							"name": "Native",
+							"reference": "B23",
+							"cost": -6,
+							"cost_type": "points"
+						},
+						{
+							"id": "e9f38c71-c4bd-45ee-a5e2-b47a33029f96",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "6cd10ab4-c4f9-4764-a47d-0e77d105d862",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Broken",
+							"cost": 1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "3c7caa3c-055e-4422-ac8e-6a2d632b391c",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Accented",
+							"cost": 2,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "231ba28d-11ce-44e1-8d23-074d40ca57c6",
+							"type": "modifier",
+							"name": "Spoken",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						},
+						{
+							"id": "152ad20b-dc58-4abb-b256-71da14dbb89c",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "None",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "6304a0d6-80f3-4a5f-b3cc-3ba2ae0c8063",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Broken",
+							"cost": 1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "5818ab4a-2c4b-4c3e-a711-c4b6332daaca",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Accented",
+							"cost": 2,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "1b77515e-5789-49a0-8238-7242900c8c2c",
+							"type": "modifier",
+							"name": "Written",
+							"reference": "B24",
+							"notes": "Native",
+							"cost": 3,
+							"cost_type": "points"
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "b449ccd2-3db7-4026-96b0-7e9b7be53d16",
+					"type": "trait",
+					"name": "Code of Honor (Hunter's)",
+					"reference": "SWC76",
+					"notes": "The more intelligent and dangerous a hunter’s prey, the more honorable the hunt is. If you can choose between different prey, you will always choose the more dangerous one.",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					}
+				},
+				{
+					"id": "aff6f75d-43ee-48ea-bde1-6ff8ae1053c8",
+					"type": "trait",
+					"name": "Compulsive Gambling",
+					"reference": "B128",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"base_points": -5,
+					"cr": 12,
+					"calc": {
+						"points": -5
+					}
+				},
+				{
+					"id": "00a6487c-4e8e-4ff8-b89b-2662f0818400",
+					"type": "trait",
+					"name": "On the Edge",
+					"reference": "B146",
+					"notes": "Make a self-control roll whenever you face a life-threatening situation: piloting a burning vehicle, staring down an entire street gang while armed only with a toothbrush, etc. If you fail, you may not back down from the challenge – but you may roll again after every success roll or reaction roll relating to the situation. In combat, make a self-control roll every time you take your turn. If you fail, you must make an All-Out attack or engage in some other kind of near-insane, suicidal behavior.",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"base_points": -15,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others if they witness your On the Edge behavior, unless it is someone who values bravery over self-preservation (GM’s decision), who will react at +2 instead",
+							"amount": -2
+						}
+					],
+					"cr": 12,
+					"calc": {
+						"points": -15
+					}
+				},
+				{
+					"id": "255824d6-aff8-466c-9235-c671092ca95c",
+					"type": "trait",
+					"name": "Selfish",
+					"reference": "B153",
+					"notes": "Make a self-control roll whenever you experience a clear social slight or “snub.” On a failure, you lash out at the offending party just as if you had Bad Temper.",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"base_points": -5,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others when your Selfishness surfaces",
+							"amount": -3
+						}
+					],
+					"cr": 12,
+					"calc": {
+						"points": -5
+					}
+				},
+				{
+					"id": "3ece5fc7-f56e-472e-8b79-2f881a59cd49",
+					"type": "trait",
+					"name": "Short Attention Span",
+					"reference": "B153",
+					"notes": "Make a self-control roll whenever you must maintain interest in something for an extended period of time, or whenever a distraction is offered. If you fail, you automatically fail at the task at hand.",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"base_points": -10,
+					"cr": 12,
+					"calc": {
+						"points": -10
+					}
+				},
+				{
+					"id": "1a1e5369-27bd-4eb5-8ede-49fba46753ad",
+					"type": "trait",
+					"name": "Likes Games",
+					"reference": "B164",
+					"tags": [
+						"Mental",
+						"Quirk"
+					],
+					"base_points": -1,
+					"calc": {
+						"points": -1
+					}
+				},
+				{
+					"id": "8755c5d3-a6fb-4199-96a9-05c36522dbfe",
+					"type": "trait",
+					"name": "Racial Skill Bonus - Gambling",
+					"reference": "BX452",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Mental",
+						"Talent"
+					],
+					"levels": 1,
+					"points_per_level": 2,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Gambling"
+							},
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"calc": {
+						"points": 2
+					}
+				}
+			],
+			"name": "Krish",
+			"reference": "SWS74",
+			"ancestry": "Human",
+			"container_type": "race",
+			"calc": {
+				"points": -68
+			}
+		}
+	]
+}
