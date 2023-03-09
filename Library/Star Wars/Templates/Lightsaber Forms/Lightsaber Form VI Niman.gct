@@ -284,6 +284,7 @@
 				}
 			],
 			"name": "Lightsaber Form VI Niman",
+			"reference": "SWF33",
 			"calc": {
 				"points": 116
 			}
@@ -399,19 +400,6 @@
 							]
 						},
 						{
-							"id": "f009df35-fcb7-4b7a-a100-e90625023c95",
-							"type": "skill",
-							"name": "Parry Beam Weapons",
-							"tags": [
-								"Combat",
-								"Force",
-								"Melee Combat",
-								"Weapon"
-							],
-							"difficulty": "dx/vh",
-							"points": 1
-						},
-						{
 							"id": "3f6f70cf-d9d2-44f5-94cb-12b0793b7247",
 							"type": "skill",
 							"name": "Precognitive Parry",
@@ -464,7 +452,8 @@
 					"name": "Primary Traits"
 				}
 			],
-			"name": "Lightsaber Form VI Niman"
+			"name": "Lightsaber Form VI Niman",
+			"reference": "SWF33"
 		}
 	],
 	"spells": [
@@ -513,6 +502,14 @@
 					}
 				]
 			}
+		}
+	],
+	"notes": [
+		{
+			"id": "b8ea28a3-52f0-42d5-badb-40bb84bc0ba9",
+			"type": "note",
+			"text": "##### Niman Form VI - The Moderation Form\naka The Way of the Rancor. Form VI attempted to balance all elements of lightsaber combat, combining the techniques from Forms that came before into a less intensely demanding combat style. In practice, Form VI was a combination of younger forms (Forms I, III, IV, and V), and all of them in moderation.",
+			"reference": "SWF33"
 		}
 	]
 }

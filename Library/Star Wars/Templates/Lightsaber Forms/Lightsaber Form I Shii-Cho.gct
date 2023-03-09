@@ -117,6 +117,7 @@
 				}
 			],
 			"name": "Lightsaber Form I Shii-Cho",
+			"reference": "SWF30",
 			"calc": {
 				"points": 61
 			}
@@ -445,10 +446,10 @@
 							]
 						},
 						{
-							"id": "f1fc4c82-2ad9-4d7d-95a7-641eabad65c2",
+							"id": "8b7af18d-973d-4c54-bb4d-855af80f9f6f",
 							"type": "technique",
 							"name": "Back Strike",
-							"notes": "Lightsaber",
+							"reference": "MA67",
 							"tags": [
 								"Combat",
 								"Melee Combat",
@@ -456,7 +457,7 @@
 								"Weapon"
 							],
 							"difficulty": "h",
-							"points": 1,
+							"points": 2,
 							"default": {
 								"type": "skill",
 								"name": "Lightsaber",
@@ -465,10 +466,10 @@
 							"limit": 0
 						},
 						{
-							"id": "fe0289ce-0fff-41bd-a358-7953cd58b3a1",
+							"id": "a750d48f-f12c-4e6b-a252-ec33c06bb15d",
 							"type": "technique",
 							"name": "Back Strike",
-							"notes": "Lightsaber (Two-Handed)",
+							"reference": "MA67",
 							"tags": [
 								"Combat",
 								"Melee Combat",
@@ -486,10 +487,10 @@
 							"limit": 0
 						},
 						{
-							"id": "037492d7-ccf3-4018-8d44-ad6f83f4399c",
+							"id": "5bd3378e-67dd-44b8-88c2-58d4e25266d0",
 							"type": "technique",
 							"name": "Disarming",
-							"notes": "Lightsaber",
+							"reference": "MA70",
 							"tags": [
 								"Combat",
 								"Melee Combat",
@@ -497,7 +498,7 @@
 								"Weapon"
 							],
 							"difficulty": "h",
-							"points": 1,
+							"points": 2,
 							"default": {
 								"type": "skill",
 								"name": "Lightsaber"
@@ -505,10 +506,10 @@
 							"limit": 5
 						},
 						{
-							"id": "04948433-8786-4bb3-80c7-d5030a0e10fd",
+							"id": "18150401-f475-40e6-9940-29d5965f7569",
 							"type": "technique",
 							"name": "Disarming",
-							"notes": "Lightsaber (Two-Handed)",
+							"reference": "MA70",
 							"tags": [
 								"Combat",
 								"Melee Combat",
@@ -528,7 +529,16 @@
 					"name": "Primary Traits"
 				}
 			],
-			"name": "Lightsaber Form I Shii-Cho"
+			"name": "Lightsaber Form I Shii-Cho",
+			"reference": "SWF30"
+		}
+	],
+	"notes": [
+		{
+			"id": "39f6ffb6-4a60-469c-baf2-63998204d451",
+			"type": "note",
+			"text": "##### Shii-Cho Form I - The determination Form\naka Way of the Sarlacc. The main technique is called \"Sun djem\" which aim to disarm or destroy the weapon of the oponent to ensure victory without causing injury, which was always a Jedi objective. However, with the rise of Form II, sun djem became nearly impossible as Makashi duelists were well trained to prevent their own weapons being taken or destroyed.\n\n",
+			"reference": "SWF30"
 		}
 	]
 }

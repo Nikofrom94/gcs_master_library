@@ -342,6 +342,7 @@
 				}
 			],
 			"name": "Lightsaber Form VII Vaapad",
+			"reference": "SWF34",
 			"calc": {
 				"points": 121
 			}
@@ -537,10 +538,14 @@
 							]
 						},
 						{
-							"id": "8ed05a66-0f77-47cb-8c81-73a02cf7c05b",
+							"id": "5fa6d589-314d-4411-b0ce-4957c6265c53",
 							"type": "skill",
 							"name": "Power Blow",
-							"difficulty": "dx/a",
+							"reference": "B215,MA58",
+							"tags": [
+								"Esoteric"
+							],
+							"difficulty": "will/h",
 							"points": 1,
 							"prereqs": {
 								"type": "prereq_list",
@@ -550,8 +555,8 @@
 										"type": "trait_prereq",
 										"has": true,
 										"name": {
-											"compare": "is",
-											"qualifier": "Weapon Master"
+											"compare": "starts_with",
+											"qualifier": "weapon master"
 										}
 									},
 									{
@@ -559,7 +564,7 @@
 										"has": true,
 										"name": {
 											"compare": "is",
-											"qualifier": "Trained By A Master"
+											"qualifier": "trained by a master"
 										}
 									}
 								]
@@ -569,7 +574,8 @@
 					"name": "Primary Traits"
 				}
 			],
-			"name": "Lightsaber Form VII Vaapad"
+			"name": "Lightsaber Form VII Vaapad",
+			"reference": "SWF34"
 		}
 	],
 	"spells": [
@@ -721,6 +727,14 @@
 					}
 				]
 			}
+		}
+	],
+	"notes": [
+		{
+			"id": "d8744b04-d8fc-451d-ba5b-438b2af55b9b",
+			"type": "note",
+			"text": "##### Vaapad Form VII - The Ferocity Form\nDerived from Juyo by Mace Windu.\u003cbr\u003e\nhttps://starwars.fandom.com/wiki/Form_VII/Legends",
+			"reference": "SWF34"
 		}
 	]
 }

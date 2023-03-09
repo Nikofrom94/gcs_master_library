@@ -246,6 +246,7 @@
 				}
 			],
 			"name": "Lightsaber Form V Djem So",
+			"reference": "SWF32",
 			"calc": {
 				"points": 76
 			}
@@ -492,7 +493,7 @@
 							"points": 2,
 							"default": {
 								"type": "skill",
-								"name": "Lightsaber (Two-Handed)",
+								"name": "Lightsaber",
 								"modifier": -5
 							},
 							"limit": 0,
@@ -505,17 +506,17 @@
 										"has": true,
 										"name": {
 											"compare": "is",
-											"qualifier": "Lightsaber (Two-Handed)"
+											"qualifier": "Lightsaber"
 										}
 									}
 								]
 							}
 						},
 						{
-							"id": "037492d7-ccf3-4018-8d44-ad6f83f4399c",
+							"id": "3e45cc90-a212-4269-9d99-2a9d18cd7b91",
 							"type": "technique",
-							"name": "Targeted Attack - Swing/Face",
-							"notes": "Lightsaber (Two-Handed)",
+							"name": "Targeted Attack (Swing/Face)",
+							"reference": "MA68",
 							"tags": [
 								"Combat",
 								"Melee Combat",
@@ -523,59 +524,20 @@
 								"Weapon"
 							],
 							"difficulty": "h",
-							"points": 1,
+							"points": 2,
 							"default": {
 								"type": "skill",
 								"name": "Lightsaber",
 								"specialization": "Two-Handed",
 								"modifier": -5
 							},
-							"limit": 0,
-							"prereqs": {
-								"type": "prereq_list",
-								"all": true,
-								"prereqs": [
-									{
-										"type": "skill_prereq",
-										"has": true,
-										"name": {
-											"compare": "is",
-											"qualifier": "Lightsaber"
-										},
-										"specialization": {
-											"compare": "is",
-											"qualifier": "Two-Handed"
-										}
-									}
-								]
-							},
-							"weapons": [
-								{
-									"id": "7fed87a9-5e8c-45aa-9442-a3f56a16ab41",
-									"type": "melee_weapon",
-									"damage": {
-										"type": "bur",
-										"base": "8d",
-										"armor_divisor": 5
-									},
-									"usage": "Targeted Attack - Face",
-									"defaults": [
-										{
-											"type": "skill",
-											"name": "Targeted Attack - Swing/Face"
-										}
-									],
-									"calc": {
-										"damage": "8d(5) bur"
-									}
-								}
-							]
+							"limit": -2
 						},
 						{
-							"id": "e651502c-015e-43be-b291-e3d5a77cd211",
+							"id": "15d49410-5ee1-4876-96cd-06f26ed174f4",
 							"type": "technique",
-							"name": "Targeted Attack - Swing/Neck",
-							"notes": "Lightsaber (Two-Handed)",
+							"name": "Targeted Attack (Swing/Neck)",
+							"reference": "MA68",
 							"tags": [
 								"Combat",
 								"Melee Combat",
@@ -583,64 +545,20 @@
 								"Weapon"
 							],
 							"difficulty": "h",
-							"points": 1,
+							"points": 2,
 							"default": {
 								"type": "skill",
 								"name": "Lightsaber",
-								"specialization": "Fencing",
+								"specialization": "Two-Handed",
 								"modifier": -5
 							},
-							"limit": 0,
-							"prereqs": {
-								"type": "prereq_list",
-								"all": true,
-								"prereqs": [
-									{
-										"type": "skill_prereq",
-										"has": true,
-										"name": {
-											"compare": "is",
-											"qualifier": "Lightsaber"
-										},
-										"specialization": {
-											"compare": "is",
-											"qualifier": "Two-Handed"
-										}
-									}
-								]
-							},
-							"weapons": [
-								{
-									"id": "59fa29b0-1cea-49c4-bdb8-11da7db44d30",
-									"type": "melee_weapon",
-									"damage": {
-										"type": "bur",
-										"base": "8d",
-										"armor_divisor": 5
-									},
-									"usage": "Targeted Attack - Neck",
-									"reach": "1,2",
-									"parry": "0",
-									"block": "No",
-									"defaults": [
-										{
-											"type": "skill",
-											"name": "Targeted Attack - Swing/neck"
-										}
-									],
-									"calc": {
-										"parry": "0",
-										"block": "No",
-										"damage": "8d(5) bur"
-									}
-								}
-							]
+							"limit": -2
 						},
 						{
-							"id": "4091a3b3-db88-454d-8d41-cd6751c9decd",
+							"id": "dde15986-3a65-4a99-a3c1-ee21c5e2cb00",
 							"type": "technique",
-							"name": "Targeted Attack - Swing/Arm",
-							"notes": "Lightsaber (Two-Handed)",
+							"name": "Targeted Attack (Swing/Arm)",
+							"reference": "MA68",
 							"tags": [
 								"Combat",
 								"Melee Combat",
@@ -648,64 +566,20 @@
 								"Weapon"
 							],
 							"difficulty": "h",
-							"points": 1,
+							"points": 2,
 							"default": {
 								"type": "skill",
 								"name": "Lightsaber",
 								"specialization": "Two-Handed",
 								"modifier": -2
 							},
-							"limit": 0,
-							"prereqs": {
-								"type": "prereq_list",
-								"all": true,
-								"prereqs": [
-									{
-										"type": "skill_prereq",
-										"has": true,
-										"name": {
-											"compare": "is",
-											"qualifier": "Lightsaber"
-										},
-										"specialization": {
-											"compare": "is",
-											"qualifier": "Two-Handed"
-										}
-									}
-								]
-							},
-							"weapons": [
-								{
-									"id": "596b7da4-d703-4efd-b51e-8d41a9cfcb1a",
-									"type": "melee_weapon",
-									"damage": {
-										"type": "bur",
-										"base": "8d",
-										"armor_divisor": 5
-									},
-									"usage": "Targeted Attack - Arm",
-									"reach": "1,2",
-									"parry": "0",
-									"block": "No",
-									"defaults": [
-										{
-											"type": "skill",
-											"name": "Targeted Attack - Swing/Arm"
-										}
-									],
-									"calc": {
-										"parry": "0",
-										"block": "No",
-										"damage": "8d(5) bur"
-									}
-								}
-							]
+							"limit": -1
 						},
 						{
-							"id": "25f5db42-0575-472c-8d63-f0be191a4736",
+							"id": "842aad48-bdd6-4816-990e-c945cd5b96b3",
 							"type": "technique",
-							"name": "Targeted Attack - Swing/Leg",
-							"notes": "Lightsaber (Fencing)",
+							"name": "Targeted Attack (Swing/Leg)",
+							"reference": "MA68",
 							"tags": [
 								"Combat",
 								"Melee Combat",
@@ -713,64 +587,21 @@
 								"Weapon"
 							],
 							"difficulty": "h",
-							"points": 1,
+							"points": 2,
 							"default": {
 								"type": "skill",
 								"name": "Lightsaber",
-								"specialization": "Fencing",
+								"specialization": "Two-Handed",
 								"modifier": -2
 							},
-							"limit": 0,
-							"prereqs": {
-								"type": "prereq_list",
-								"all": true,
-								"prereqs": [
-									{
-										"type": "skill_prereq",
-										"has": true,
-										"name": {
-											"compare": "is",
-											"qualifier": "Lightsaber"
-										},
-										"specialization": {
-											"compare": "is",
-											"qualifier": "Fencing"
-										}
-									}
-								]
-							},
-							"weapons": [
-								{
-									"id": "4acbd2ec-863f-40dc-9797-c79d2ffbc23a",
-									"type": "melee_weapon",
-									"damage": {
-										"type": "bur",
-										"base": "8d",
-										"armor_divisor": 5
-									},
-									"usage": "Targeted Attack - Leg",
-									"reach": "1,2",
-									"parry": "0",
-									"block": "No",
-									"defaults": [
-										{
-											"type": "skill",
-											"name": "Targeted Attack - Swing/Leg"
-										}
-									],
-									"calc": {
-										"parry": "0",
-										"block": "No",
-										"damage": "8d(5) bur"
-									}
-								}
-							]
+							"limit": -1
 						}
 					],
 					"name": "Primary Traits"
 				}
 			],
-			"name": "Lightsaber Form V Djem So"
+			"name": "Lightsaber Form V Djem So",
+			"reference": "SWF32"
 		}
 	],
 	"spells": [
@@ -819,6 +650,14 @@
 					}
 				]
 			}
+		}
+	],
+	"notes": [
+		{
+			"id": "b32c5359-24d8-45e9-8a1d-66312b372092",
+			"type": "note",
+			"text": "##### Djem So Form V - The Perseverance Form\nUtilizing a combination of blocks and parries, a **Djem So** user had a proper foundation in terms of defense against both ranged and melee attacks. Immediately after defending against an opponent's strike, a **Djem So** stylist would follow with an attack of their own, bringing the force of the opponent's blow against them\nand seeking to dominate the duel. **Djem So** placed a heavy focus on pure strength and power, with wide, powerful strikes and parries followed by a counterattack. \n\u003cbr\u003eUnlike **Soresu** or **Ataru**, **Djem So** required the user to not only counterattack, but press the assault, combining Force-enhanced strength with powerful blade combinations to overpower and overwhelm an opponent's defenses.\u003cbr\u003e\nThe character begin with \"all-out defense\", or some of attack-parry, trigger a counterattack and then launch a series of \"all-out attack strong\", using powerblow or the Force hability \"Enhance Strenth\" if possible.",
+			"reference": "SWF33"
 		}
 	]
 }

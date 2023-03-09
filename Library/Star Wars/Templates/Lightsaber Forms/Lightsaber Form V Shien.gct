@@ -246,6 +246,7 @@
 				}
 			],
 			"name": "Lightsaber Form V Shien",
+			"reference": "SWF33",
 			"calc": {
 				"points": 76
 			}
@@ -445,19 +446,6 @@
 							]
 						},
 						{
-							"id": "f009df35-fcb7-4b7a-a100-e90625023c95",
-							"type": "skill",
-							"name": "Parry Beam Weapons",
-							"tags": [
-								"Combat",
-								"Force",
-								"Melee Combat",
-								"Weapon"
-							],
-							"difficulty": "dx/vh",
-							"points": 1
-						},
-						{
 							"id": "4ecfdafb-d668-42ff-9653-291b1012b649",
 							"type": "technique",
 							"name": "Counterattack",
@@ -492,10 +480,83 @@
 							}
 						},
 						{
-							"id": "037492d7-ccf3-4018-8d44-ad6f83f4399c",
+							"id": "6cca7e97-823a-41bd-9a8b-5868c166248b",
+							"type": "skill",
+							"name": "Precognitive Parry",
+							"reference": "MA62",
+							"tags": [
+								"Martial Arts"
+							],
+							"difficulty": "iq/h",
+							"points": 1,
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "@melee combat skill@"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 18
+										}
+									},
+									{
+										"type": "prereq_list",
+										"all": false,
+										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Precognition"
+												}
+											},
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Danger Sense"
+												}
+											}
+										]
+									},
+									{
+										"type": "prereq_list",
+										"all": false,
+										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Weapon Master"
+												}
+											},
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Trained by a Master"
+												}
+											}
+										]
+									}
+								]
+							}
+						},
+						{
+							"id": "0aadd397-69ab-40ba-9af7-afa6a3d3f699",
 							"type": "technique",
-							"name": "Targeted Attack - Swing/Face",
-							"notes": "Lightsaber (Two-Handed)",
+							"name": "Targeted Attack (Swing/Face)",
+							"reference": "MA68",
 							"tags": [
 								"Combat",
 								"Melee Combat",
@@ -503,59 +564,20 @@
 								"Weapon"
 							],
 							"difficulty": "h",
-							"points": 1,
+							"points": 2,
 							"default": {
 								"type": "skill",
-								"name": "Lightsaber",
+								"name": "Lighsaber",
 								"specialization": "Two-Handed",
 								"modifier": -5
 							},
-							"limit": 0,
-							"prereqs": {
-								"type": "prereq_list",
-								"all": true,
-								"prereqs": [
-									{
-										"type": "skill_prereq",
-										"has": true,
-										"name": {
-											"compare": "is",
-											"qualifier": "Lightsaber"
-										},
-										"specialization": {
-											"compare": "is",
-											"qualifier": "Two-Handed"
-										}
-									}
-								]
-							},
-							"weapons": [
-								{
-									"id": "5b90da9b-b422-4620-b43d-186caf275a34",
-									"type": "melee_weapon",
-									"damage": {
-										"type": "bur",
-										"base": "8d",
-										"armor_divisor": 5
-									},
-									"usage": "Targeted Attack - Face",
-									"defaults": [
-										{
-											"type": "skill",
-											"name": "Targeted Attack - Swing/Face"
-										}
-									],
-									"calc": {
-										"damage": "8d(5) bur"
-									}
-								}
-							]
+							"limit": -2
 						},
 						{
-							"id": "e651502c-015e-43be-b291-e3d5a77cd211",
+							"id": "420e3611-09f2-41e7-b60f-74baf5469274",
 							"type": "technique",
-							"name": "Targeted Attack - Swing/Neck",
-							"notes": "Lightsaber (Two-Handed)",
+							"name": "Targeted Attack (Swing/Neck)",
+							"reference": "MA68",
 							"tags": [
 								"Combat",
 								"Melee Combat",
@@ -563,64 +585,20 @@
 								"Weapon"
 							],
 							"difficulty": "h",
-							"points": 1,
+							"points": 2,
 							"default": {
 								"type": "skill",
-								"name": "Lightsaber",
-								"specialization": "Fencing",
+								"name": "Lighsaber",
+								"specialization": "Two-Handed",
 								"modifier": -5
 							},
-							"limit": 0,
-							"prereqs": {
-								"type": "prereq_list",
-								"all": true,
-								"prereqs": [
-									{
-										"type": "skill_prereq",
-										"has": true,
-										"name": {
-											"compare": "is",
-											"qualifier": "Lightsaber"
-										},
-										"specialization": {
-											"compare": "is",
-											"qualifier": "Two-Handed"
-										}
-									}
-								]
-							},
-							"weapons": [
-								{
-									"id": "4f095d77-e8d2-4a86-b597-c3ef9de082b0",
-									"type": "melee_weapon",
-									"damage": {
-										"type": "bur",
-										"base": "8d",
-										"armor_divisor": 5
-									},
-									"usage": "Targeted Attack - Neck",
-									"reach": "1,2",
-									"parry": "0",
-									"block": "No",
-									"defaults": [
-										{
-											"type": "skill",
-											"name": "Targeted Attack - Swing/neck"
-										}
-									],
-									"calc": {
-										"parry": "0",
-										"block": "No",
-										"damage": "8d(5) bur"
-									}
-								}
-							]
+							"limit": -2
 						},
 						{
-							"id": "4091a3b3-db88-454d-8d41-cd6751c9decd",
+							"id": "b6c8b9c6-500d-44c7-9fb5-7853236e7cf8",
 							"type": "technique",
-							"name": "Targeted Attack - Swing/Arm",
-							"notes": "Lightsaber (Two-Handed)",
+							"name": "Targeted Attack (Swing/Arm)",
+							"reference": "MA68",
 							"tags": [
 								"Combat",
 								"Melee Combat",
@@ -628,129 +606,42 @@
 								"Weapon"
 							],
 							"difficulty": "h",
-							"points": 1,
+							"points": 2,
+							"default": {
+								"type": "skill",
+								"name": "Lighsaber",
+								"specialization": "Two-Handed",
+								"modifier": -2
+							},
+							"limit": -1
+						},
+						{
+							"id": "bece7e65-79ed-4dbf-ab77-6831cdfffc19",
+							"type": "technique",
+							"name": "Targeted Attack (Swing/Leg)",
+							"reference": "MA68",
+							"tags": [
+								"Combat",
+								"Melee Combat",
+								"Technique",
+								"Weapon"
+							],
+							"difficulty": "h",
+							"points": 2,
 							"default": {
 								"type": "skill",
 								"name": "Lightsaber",
 								"specialization": "Two-Handed",
 								"modifier": -2
 							},
-							"limit": 0,
-							"prereqs": {
-								"type": "prereq_list",
-								"all": true,
-								"prereqs": [
-									{
-										"type": "skill_prereq",
-										"has": true,
-										"name": {
-											"compare": "is",
-											"qualifier": "Lightsaber"
-										},
-										"specialization": {
-											"compare": "is",
-											"qualifier": "Two-Handed"
-										}
-									}
-								]
-							},
-							"weapons": [
-								{
-									"id": "e5071912-5c2c-4332-a0ee-0615df30663b",
-									"type": "melee_weapon",
-									"damage": {
-										"type": "bur",
-										"base": "8d",
-										"armor_divisor": 5
-									},
-									"usage": "Targeted Attack - Arm",
-									"reach": "1,2",
-									"parry": "0",
-									"block": "No",
-									"defaults": [
-										{
-											"type": "skill",
-											"name": "Targeted Attack - Swing/Arm"
-										}
-									],
-									"calc": {
-										"parry": "0",
-										"block": "No",
-										"damage": "8d(5) bur"
-									}
-								}
-							]
-						},
-						{
-							"id": "25f5db42-0575-472c-8d63-f0be191a4736",
-							"type": "technique",
-							"name": "Targeted Attack - Swing/Leg",
-							"notes": "Lightsaber (Fencing)",
-							"tags": [
-								"Combat",
-								"Melee Combat",
-								"Technique",
-								"Weapon"
-							],
-							"difficulty": "h",
-							"points": 1,
-							"default": {
-								"type": "skill",
-								"name": "Lightsaber",
-								"specialization": "Fencing",
-								"modifier": -2
-							},
-							"limit": 0,
-							"prereqs": {
-								"type": "prereq_list",
-								"all": true,
-								"prereqs": [
-									{
-										"type": "skill_prereq",
-										"has": true,
-										"name": {
-											"compare": "is",
-											"qualifier": "Lightsaber"
-										},
-										"specialization": {
-											"compare": "is",
-											"qualifier": "Fencing"
-										}
-									}
-								]
-							},
-							"weapons": [
-								{
-									"id": "84c36bed-814b-41a3-b514-28f64159ed7b",
-									"type": "melee_weapon",
-									"damage": {
-										"type": "bur",
-										"base": "8d",
-										"armor_divisor": 5
-									},
-									"usage": "Targeted Attack - Leg",
-									"reach": "1,2",
-									"parry": "0",
-									"block": "No",
-									"defaults": [
-										{
-											"type": "skill",
-											"name": "Targeted Attack - Swing/Leg"
-										}
-									],
-									"calc": {
-										"parry": "0",
-										"block": "No",
-										"damage": "8d(5) bur"
-									}
-								}
-							]
+							"limit": -1
 						}
 					],
 					"name": "Primary Traits"
 				}
 			],
-			"name": "Lightsaber Form V Shien"
+			"name": "Lightsaber Form V Shien",
+			"reference": "SWF33"
 		}
 	],
 	"spells": [
@@ -799,6 +690,14 @@
 					}
 				]
 			}
+		}
+	],
+	"notes": [
+		{
+			"id": "21bffc34-f1c2-48a1-8a38-85c9d18787c7",
+			"type": "note",
+			"text": "##### Shien Form V - Perseverance Form\nShien was described as being well adapted to guarding against blaster fire and enemy strikes without\ncompromising one's ability to launch powerful counterattacks, though was less effective against a single opponent. The opening stance for Shien was a high guard position, with the hilt held in a two-handed grip above the user's head, and the blade angled upwards and behind the user. The dominant leg would be back, enabling powerful step-through strikes to be utilized.",
+			"reference": "SWF33"
 		}
 	]
 }

@@ -207,6 +207,7 @@
 				}
 			],
 			"name": "Lightsaber Form II Makashi",
+			"reference": "SWF30",
 			"calc": {
 				"points": 66
 			}
@@ -429,25 +430,49 @@
 							]
 						},
 						{
-							"id": "ebe6898a-a5ab-4c63-8457-b14f8c7b1299",
+							"id": "f2715f88-afdf-45a9-b901-692224836439",
 							"type": "skill",
 							"name": "Precognitive Parry",
-							"difficulty": "dx/a",
+							"reference": "MA62",
+							"tags": [
+								"Martial Arts"
+							],
+							"difficulty": "iq/h",
 							"points": 1,
 							"prereqs": {
 								"type": "prereq_list",
 								"all": true,
 								"prereqs": [
 									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "@melee combat skill@"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 18
+										}
+									},
+									{
 										"type": "prereq_list",
-										"all": true,
+										"all": false,
 										"prereqs": [
 											{
 												"type": "trait_prereq",
 												"has": true,
 												"name": {
 													"compare": "is",
-													"qualifier": "Force Sensitivity"
+													"qualifier": "Precognition"
+												}
+											},
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Danger Sense"
 												}
 											}
 										]
@@ -461,7 +486,7 @@
 												"has": true,
 												"name": {
 													"compare": "is",
-													"qualifier": "Danger Sense"
+													"qualifier": "Weapon Master"
 												}
 											},
 											{
@@ -469,7 +494,7 @@
 												"has": true,
 												"name": {
 													"compare": "is",
-													"qualifier": "Precognition"
+													"qualifier": "Trained by a Master"
 												}
 											}
 										]
@@ -498,10 +523,10 @@
 							"limit": 5
 						},
 						{
-							"id": "4091a3b3-db88-454d-8d41-cd6751c9decd",
+							"id": "f286c2cb-bdbd-4aba-ab9d-3ee241d2bfca",
 							"type": "technique",
-							"name": "Targeted Attack - Swing/Arm",
-							"notes": "Lightsaber (Fencing)",
+							"name": "Counterattack",
+							"reference": "MA70",
 							"tags": [
 								"Combat",
 								"Melee Combat",
@@ -509,32 +534,35 @@
 								"Weapon"
 							],
 							"difficulty": "h",
-							"points": 1,
+							"points": 2,
+							"default": {
+								"type": "skill",
+								"name": "Lightsaber",
+								"specialization": "Fencing",
+								"modifier": -5
+							},
+							"limit": 0
+						},
+						{
+							"id": "4091a3b3-db88-454d-8d41-cd6751c9decd",
+							"type": "technique",
+							"name": "Targeted Attack - Swing/Arm",
+							"reference": "MA68",
+							"tags": [
+								"Combat",
+								"Melee Combat",
+								"Technique",
+								"Weapon"
+							],
+							"difficulty": "h",
+							"points": 2,
 							"default": {
 								"type": "skill",
 								"name": "Lightsaber",
 								"specialization": "Fencing",
 								"modifier": -2
 							},
-							"limit": 0,
-							"prereqs": {
-								"type": "prereq_list",
-								"all": true,
-								"prereqs": [
-									{
-										"type": "skill_prereq",
-										"has": true,
-										"name": {
-											"compare": "is",
-											"qualifier": "Lightsaber"
-										},
-										"specialization": {
-											"compare": "is",
-											"qualifier": "Fencing"
-										}
-									}
-								]
-							},
+							"limit": -1,
 							"weapons": [
 								{
 									"id": "d0dde1ad-cf0e-4f39-8793-86412c3fa4c4",
@@ -566,7 +594,7 @@
 							"id": "25f5db42-0575-472c-8d63-f0be191a4736",
 							"type": "technique",
 							"name": "Targeted Attack - Swing/Leg",
-							"notes": "Lightsaber (Fencing)",
+							"reference": "MA68",
 							"tags": [
 								"Combat",
 								"Melee Combat",
@@ -574,14 +602,14 @@
 								"Weapon"
 							],
 							"difficulty": "h",
-							"points": 1,
+							"points": 2,
 							"default": {
 								"type": "skill",
 								"name": "Lightsaber",
 								"specialization": "Fencing",
 								"modifier": -2
 							},
-							"limit": 0,
+							"limit": -1,
 							"prereqs": {
 								"type": "prereq_list",
 								"all": true,
@@ -631,7 +659,7 @@
 							"id": "037492d7-ccf3-4018-8d44-ad6f83f4399c",
 							"type": "technique",
 							"name": "Targeted Attack - Thrust/Face",
-							"notes": "Lightsaber (Fencing)",
+							"reference": "MA68",
 							"tags": [
 								"Combat",
 								"Melee Combat",
@@ -639,14 +667,14 @@
 								"Weapon"
 							],
 							"difficulty": "h",
-							"points": 1,
+							"points": 2,
 							"default": {
 								"type": "skill",
 								"name": "Lightsaber",
 								"specialization": "Fencing",
 								"modifier": -5
 							},
-							"limit": 0,
+							"limit": -1,
 							"prereqs": {
 								"type": "prereq_list",
 								"all": true,
@@ -691,7 +719,7 @@
 							"id": "e651502c-015e-43be-b291-e3d5a77cd211",
 							"type": "technique",
 							"name": "Targeted Attack - Thrust/Neck",
-							"notes": "Lightsaber (Fencing)",
+							"reference": "MA68",
 							"tags": [
 								"Combat",
 								"Melee Combat",
@@ -699,14 +727,14 @@
 								"Weapon"
 							],
 							"difficulty": "h",
-							"points": 1,
+							"points": 2,
 							"default": {
 								"type": "skill",
 								"name": "Lightsaber",
 								"specialization": "Fencing",
 								"modifier": -5
 							},
-							"limit": 0,
+							"limit": -1,
 							"prereqs": {
 								"type": "prereq_list",
 								"all": true,
@@ -756,7 +784,7 @@
 							"id": "89af8b0c-1574-41de-af51-b13b1422b7b8",
 							"type": "technique",
 							"name": "Targeted Attack - Thrust/Vitals",
-							"notes": "Lightsaber (Fencing)",
+							"reference": "MA68",
 							"tags": [
 								"Combat",
 								"Melee Combat",
@@ -764,14 +792,14 @@
 								"Weapon"
 							],
 							"difficulty": "h",
-							"points": 1,
+							"points": 2,
 							"default": {
 								"type": "skill",
 								"name": "Lightsaber",
 								"specialization": "Fencing",
 								"modifier": -3
 							},
-							"limit": 0,
+							"limit": -1,
 							"prereqs": {
 								"type": "prereq_list",
 								"all": true,
@@ -822,6 +850,13 @@
 				}
 			],
 			"name": "Lightsaber Form II Makashi"
+		}
+	],
+	"notes": [
+		{
+			"id": "e9fe70de-28e7-488f-a069-b321b1b0956f",
+			"type": "note",
+			"text": "##### Makashi Form II - The Contention Form\naka the way of the Ysalamiri. It was described of being very elegant,powerful, and requiring extreme precision, allowing the user to attack and defend with minimal effort, while his opponent tires himself out, often wielding the blade one-handed for greater range of movement and fluidity. The form relied on parries, thrusts, and small, precise cuts, as opposed to the blocking and slashing of the other forms. Form II countered sun djem (disarming/destroy oponent's weapon), the goal of early Form I masters, by being well trained in prevention of disarming and weapon destruction."
 		}
 	]
 }

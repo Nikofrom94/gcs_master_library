@@ -284,37 +284,82 @@
 					}
 				},
 				{
-					"id": "0614be11-2071-4a70-880c-95ee3238de68",
-					"type": "trait",
-					"name": "Extra Attack",
-					"reference": "B53",
-					"tags": [
-						"Advantage",
-						"Physical"
-					],
-					"modifiers": [
+					"id": "6ad420e0-7000-4981-9e8d-9f3dbcc121fb",
+					"type": "trait_container",
+					"open": true,
+					"children": [
 						{
-							"id": "a6106771-23ae-4ad8-88ff-6af105480d12",
-							"type": "modifier",
-							"name": "Multi-Strike",
-							"reference": "P49",
-							"cost": 20,
-							"disabled": true
+							"id": "3708663d-e9b8-4478-84e1-971688e9206c",
+							"type": "trait",
+							"name": "Extra Attack",
+							"reference": "B53",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "a6106771-23ae-4ad8-88ff-6af105480d12",
+									"type": "modifier",
+									"name": "Multi-Strike",
+									"reference": "P49",
+									"cost": 20,
+									"disabled": true
+								},
+								{
+									"id": "b03698cf-2eef-4377-9524-cd8b8393916e",
+									"type": "modifier",
+									"name": "Single Skill",
+									"reference": "P49",
+									"notes": "Lightsaber (Double-Headed)",
+									"cost": -20
+								}
+							],
+							"levels": 1,
+							"points_per_level": 25,
+							"can_level": true,
+							"calc": {
+								"points": 20
+							}
 						},
 						{
-							"id": "b03698cf-2eef-4377-9524-cd8b8393916e",
-							"type": "modifier",
-							"name": "Single Skill",
-							"reference": "P49",
-							"notes": "Lightsaber (Two-Handed)",
-							"cost": -20
+							"id": "0614be11-2071-4a70-880c-95ee3238de68",
+							"type": "trait",
+							"name": "Extra Attack",
+							"reference": "B53",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "a6106771-23ae-4ad8-88ff-6af105480d12",
+									"type": "modifier",
+									"name": "Multi-Strike",
+									"reference": "P49",
+									"cost": 20,
+									"disabled": true
+								},
+								{
+									"id": "b03698cf-2eef-4377-9524-cd8b8393916e",
+									"type": "modifier",
+									"name": "Single Skill",
+									"reference": "P49",
+									"notes": "Lightsaber (Two-Handed)",
+									"cost": -20
+								}
+							],
+							"levels": 1,
+							"points_per_level": 25,
+							"can_level": true,
+							"calc": {
+								"points": 20
+							}
 						}
 					],
-					"levels": 1,
-					"points_per_level": 25,
-					"can_level": true,
+					"name": "Extra Attack - choose one",
 					"calc": {
-						"points": 20
+						"points": 40
 					}
 				},
 				{
@@ -343,8 +388,9 @@
 				}
 			],
 			"name": "Lightsaber form VII Juyo",
+			"reference": "SWF34",
 			"calc": {
-				"points": 121
+				"points": 141
 			}
 		}
 	],
@@ -493,38 +539,49 @@
 							]
 						},
 						{
-							"id": "f009df35-fcb7-4b7a-a100-e90625023c95",
-							"type": "skill",
-							"name": "Parry Beam Weapons",
-							"tags": [
-								"Combat",
-								"Force",
-								"Melee Combat",
-								"Weapon"
-							],
-							"difficulty": "dx/vh",
-							"points": 1
-						},
-						{
-							"id": "3f6f70cf-d9d2-44f5-94cb-12b0793b7247",
+							"id": "ca14723b-44a5-47e1-b4c5-00e27aeb945e",
 							"type": "skill",
 							"name": "Precognitive Parry",
-							"difficulty": "dx/a",
+							"reference": "MA62",
+							"tags": [
+								"Martial Arts"
+							],
+							"difficulty": "iq/h",
 							"points": 1,
 							"prereqs": {
 								"type": "prereq_list",
 								"all": true,
 								"prereqs": [
 									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "@melee combat skill@"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 18
+										}
+									},
+									{
 										"type": "prereq_list",
-										"all": true,
+										"all": false,
 										"prereqs": [
 											{
 												"type": "trait_prereq",
 												"has": true,
 												"name": {
 													"compare": "is",
-													"qualifier": "Force Sensitivity"
+													"qualifier": "Precognition"
+												}
+											},
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Danger Sense"
 												}
 											}
 										]
@@ -538,7 +595,7 @@
 												"has": true,
 												"name": {
 													"compare": "is",
-													"qualifier": "Danger Sense"
+													"qualifier": "Weapon Master"
 												}
 											},
 											{
@@ -546,7 +603,7 @@
 												"has": true,
 												"name": {
 													"compare": "is",
-													"qualifier": "Precognition"
+													"qualifier": "Trained by a Master"
 												}
 											}
 										]
@@ -558,7 +615,8 @@
 					"name": "Primary Traits"
 				}
 			],
-			"name": "Lightsaber form VII Juyo"
+			"name": "Lightsaber form VII Juyo",
+			"reference": "SWF34"
 		}
 	],
 	"spells": [
@@ -664,6 +722,14 @@
 					}
 				]
 			}
+		}
+	],
+	"notes": [
+		{
+			"id": "04638d77-5843-4bad-858c-43f850c57adb",
+			"type": "note",
+			"text": "##### Juyo Form VII - The Ferocity Form\naka the Way of the Vornskr. Juyo was described as the most vicious form of lightsaber combat and was said to be filled with both fury and \"malignant grace.\" The form was given the title of the most difficult and demanding form in all of the lightsaber combat. Skilled combatants with Juyo were said by Jedi Master Vrook Lamar to be able to \"eviscerate a lone enemy\"; in fact, it was designed for such a purpose in one-on-one lightsaber duels. According to the Sith Lord Darth Traya, the form was both chaotic and erratic, with a heavy focus on offense,[5] and using techniques believed to have been rejected from Shii-Cho in the earliest days of the Jedi Order. Juyo's use was controversial among the Jedi Order, as many felt that Juyo violated the \"there is no emotion, there is peace\" tenet of the Jedi Code due to its requirement to fight under the guidance of controlled passion. The Sith had no such inhibition, and Darth Sidious went so far as to label it a \"Sith style.\"\u003cbr\u003e\nhttps://starwars.fandom.com/wiki/Form_VII/Legends",
+			"reference": "SWF34"
 		}
 	]
 }

@@ -187,6 +187,7 @@
 				}
 			],
 			"name": "Lightsaber Form IV Ataru",
+			"reference": "SWF32",
 			"calc": {
 				"points": 56
 			}
@@ -549,7 +550,8 @@
 					"name": "Primary Traits"
 				}
 			],
-			"name": "Lightsaber Form IV Ataru"
+			"name": "Lightsaber Form IV Ataru",
+			"reference": "SWF32"
 		}
 	],
 	"spells": [
@@ -643,6 +645,14 @@
 					}
 				]
 			}
+		}
+	],
+	"notes": [
+		{
+			"id": "7c46f36a-476d-4560-b689-e0bbf947afef",
+			"type": "note",
+			"text": "##### Ataru Form IV - Aggression form\naka the Way of the Hawk-Bat. An aggressive style, Form IV was fast-paced and effective against single opponents, though weaker in prolonged combat and confined spaces. Ataru was characterized by Force-assisted acrobatics, both for attack and defense, and fast, powerful strikes. In Gurps, user could choose \"Rapid-Strike\" and \"All-out attacks\" to rain blows.",
+			"reference": "SWF32"
 		}
 	]
 }

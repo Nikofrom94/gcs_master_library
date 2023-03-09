@@ -94,6 +94,7 @@
 				}
 			],
 			"name": "Lightsaber Form III Soresu",
+			"reference": "SWF31",
 			"calc": {
 				"points": 31
 			}
@@ -358,25 +359,49 @@
 							]
 						},
 						{
-							"id": "c93641de-c68b-4e07-8e93-7948a345c049",
+							"id": "05fba2e4-1867-4955-890b-adf276ed61ed",
 							"type": "skill",
 							"name": "Precognitive Parry",
-							"difficulty": "dx/a",
+							"reference": "MA62",
+							"tags": [
+								"Martial Arts"
+							],
+							"difficulty": "iq/h",
 							"points": 1,
 							"prereqs": {
 								"type": "prereq_list",
 								"all": true,
 								"prereqs": [
 									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "@melee combat skill@"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 18
+										}
+									},
+									{
 										"type": "prereq_list",
-										"all": true,
+										"all": false,
 										"prereqs": [
 											{
 												"type": "trait_prereq",
 												"has": true,
 												"name": {
 													"compare": "is",
-													"qualifier": "Force Sensitivity"
+													"qualifier": "Precognition"
+												}
+											},
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Danger Sense"
 												}
 											}
 										]
@@ -390,7 +415,7 @@
 												"has": true,
 												"name": {
 													"compare": "is",
-													"qualifier": "Danger Sense"
+													"qualifier": "Weapon Master"
 												}
 											},
 											{
@@ -398,7 +423,7 @@
 												"has": true,
 												"name": {
 													"compare": "is",
-													"qualifier": "Precognition"
+													"qualifier": "Trained by a Master"
 												}
 											}
 										]
@@ -511,7 +536,16 @@
 					"name": "Primary Traits"
 				}
 			],
-			"name": "Lightsaber Form III Soresu"
+			"name": "Lightsaber Form III Soresu",
+			"reference": "SWF31"
+		}
+	],
+	"notes": [
+		{
+			"id": "efa48b6a-8e5d-455c-bd98-be0a6fd35bcf",
+			"type": "note",
+			"text": "##### Soresu Form III - The Resilience Form\naka the Way of the Mynock. \nOriginally, Form III was developed as a counter to blaster weapons used by multiple opponents.\nForm III was the most defensive of the seven forms. Player should select \"all-out defense\", along with \"evade (acrobatics)\" as much as possible.",
+			"reference": "SWF31"
 		}
 	]
 }
