@@ -28,6 +28,18 @@
 					}
 				]
 			},
+			"features": [
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Dun Möch"
+					},
+					"amount": 1,
+					"per_level": true
+				}
+			],
 			"can_level": true,
 			"calc": {
 				"points": 10
@@ -246,6 +258,18 @@
 					}
 				]
 			},
+			"features": [
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Dun Möch"
+					},
+					"amount": -1,
+					"per_level": true
+				}
+			],
 			"can_level": true,
 			"calc": {
 				"points": 10
@@ -277,6 +301,15 @@
 				]
 			},
 			"features": [
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Dun Möch"
+					},
+					"amount": 1
+				},
 				{
 					"type": "spell_bonus",
 					"match": "college_name",
@@ -337,6 +370,15 @@
 			},
 			"features": [
 				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Dun Möch"
+					},
+					"amount": 1
+				},
+				{
 					"type": "spell_bonus",
 					"match": "college_name",
 					"name": {
@@ -396,6 +438,15 @@
 			},
 			"features": [
 				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Dun Möch"
+					},
+					"amount": 1
+				},
+				{
 					"type": "spell_bonus",
 					"match": "college_name",
 					"name": {
@@ -454,6 +505,15 @@
 				]
 			},
 			"features": [
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Dun Möch"
+					},
+					"amount": 1
+				},
 				{
 					"type": "spell_bonus",
 					"match": "college_name",
@@ -699,6 +759,15 @@
 			},
 			"features": [
 				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Dun Möch"
+					},
+					"amount": -1
+				},
+				{
 					"type": "spell_bonus",
 					"match": "college_name",
 					"name": {
@@ -732,65 +801,6 @@
 			}
 		},
 		{
-			"id": "152bced4-bfca-4cea-a6c8-e5ca9e0e64cd",
-			"type": "trait",
-			"name": "Light Aspect of The Force (Harmony)",
-			"reference": "SWF27",
-			"tags": [
-				"Disadvantage",
-				"Force",
-				"Supernatural"
-			],
-			"base_points": -12,
-			"prereqs": {
-				"type": "prereq_list",
-				"all": true,
-				"prereqs": [
-					{
-						"type": "trait_prereq",
-						"has": true,
-						"name": {
-							"compare": "is",
-							"qualifier": "Force Sensitivity"
-						}
-					}
-				]
-			},
-			"features": [
-				{
-					"type": "spell_bonus",
-					"match": "college_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "Light"
-					},
-					"amount": 4
-				},
-				{
-					"type": "spell_bonus",
-					"match": "college_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "Dark"
-					},
-					"amount": -8
-				},
-				{
-					"type": "conditional_modifier",
-					"situation": "Reaction from Jedi",
-					"amount": 2
-				},
-				{
-					"type": "conditional_modifier",
-					"situation": "Reaction from Dark Jedi \u0026 Sith",
-					"amount": -4
-				}
-			],
-			"calc": {
-				"points": -12
-			}
-		},
-		{
 			"id": "57bef0b0-b273-4deb-92c5-3a35174081fc",
 			"type": "trait",
 			"name": "Light Aspect of The Force (Illuminated)",
@@ -816,6 +826,15 @@
 				]
 			},
 			"features": [
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Dun Möch"
+					},
+					"amount": -1
+				},
 				{
 					"type": "spell_bonus",
 					"match": "college_name",
@@ -850,6 +869,74 @@
 			}
 		},
 		{
+			"id": "152bced4-bfca-4cea-a6c8-e5ca9e0e64cd",
+			"type": "trait",
+			"name": "Light Aspect of The Force (Harmony)",
+			"reference": "SWF27",
+			"tags": [
+				"Disadvantage",
+				"Force",
+				"Supernatural"
+			],
+			"base_points": -12,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "trait_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Force Sensitivity"
+						}
+					}
+				]
+			},
+			"features": [
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Dun Möch"
+					},
+					"amount": -1
+				},
+				{
+					"type": "spell_bonus",
+					"match": "college_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Light"
+					},
+					"amount": 4
+				},
+				{
+					"type": "spell_bonus",
+					"match": "college_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Dark"
+					},
+					"amount": -8
+				},
+				{
+					"type": "conditional_modifier",
+					"situation": "Reaction from Jedi",
+					"amount": 2
+				},
+				{
+					"type": "conditional_modifier",
+					"situation": "Reaction from Dark Jedi \u0026 Sith",
+					"amount": -4
+				}
+			],
+			"calc": {
+				"points": -12
+			}
+		},
+		{
 			"id": "3698c353-0d50-408b-abcd-f0cbaa2c6268",
 			"type": "trait",
 			"name": "Light Aspect of The Force (Journeyman)",
@@ -875,6 +962,15 @@
 				]
 			},
 			"features": [
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Dun Möch"
+					},
+					"amount": -1
+				},
 				{
 					"type": "spell_bonus",
 					"match": "college_name",
